@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Zombie Siege</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <canvas id="game" aria-label="Zombie Siege game screen"></canvas>
+
+    <header class="hud">
+        <div class="box"><small>Score</small><b id="score">0</b></div>
+        <div class="box"><small>Wave</small><b id="wave">1</b></div>
+        <div class="box grow">
+            <small>Base health</small>
+            <div class="hp"><i id="hpBar"></i></div>
+        </div>
+        <div class="box"><small id="gunName">Pistol</small><b id="ammo">12/12</b></div>
+    </header>
+
+    <nav class="bar" id="bar" aria-label="Weapons">
+        <button data-gun="pistol" class="active">1 Pistol</button>
+        <button data-gun="rifle">2 Rifle</button>
+        <button data-gun="shotgun">3 Shotgun</button>
+        <button id="reloadBtn" class="reload">Reload (R)</button>
+    </nav>
+
+    <div id="overlay" class="overlay">
+        <h1 id="ovTitle">Zombie Siege</h1>
+        <p id="ovText">Defend your base in the center. Aim and shoot the zombies before they reach it.</p>
+        <button id="startBtn" class="start">Start game</button>
+        <ul class="help">
+            <li><b>Aim and shoot:</b> move the mouse and click, or touch and drag</li>
+            <li><b>Weapons:</b> keys 1, 2, 3 or the buttons below</li>
+            <li><b>Reload:</b> R key or the Reload button</li>
+        </ul>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
